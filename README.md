@@ -61,8 +61,7 @@ démarrage en utilisant la commande reboot. Pendant ce redémarrage, tous
 les processus sont interrompus. Le système propose une option
 d\'annulation du redémarrage, puis il lance le noyau.
 
-> ![](media/image1.png){width="6.205555555555556in"
-> height="3.322221128608924in"}
+> ![](media/image1.png){width="6.205555555555556in" height="3.322221128608924in"}
 
 **1.3.2.Configuration réseau**\
 Lors de la connexion de la carte VEEK sur le switch, l\'adresse qui nous
@@ -312,9 +311,8 @@ height="3.6972222222222224in"}
 > la structure qui s'occupe des leds et l'utiliser dans le
 > timer_callback: pour changer la valeur des LEDs :
 >
-> ![](media/image18.png){width="6.3in"
-> height="0.3527777777777778in"}
->
+> ![](media/image18.png){width="6.3in" height="0.3527777777777778in"}
+
 > les deux lignes ci-dessus permettent de modifier la valeur des LEDS ,
 > ainsi en allant lire les fichiers:\
 > -/proc/ensea/speed\
