@@ -140,7 +140,7 @@ Un programme qui accède directement aux registres depuis l'espace
 utilisateur.
 
 > ![](media/image7.png)
->
+
 > **Limitations de mmap():**
 >
 > Les mappages de mémoire sont toujours ajustés à des multiples entiers
@@ -189,7 +189,7 @@ Pour inclure une entrée dans le système de fichiers proc :
 Pour ajouter un timer:
 
 > ![](media/image11.png)
->
+
 > **2.4.** **Récupération du Noyau Terasic**
 >
 > c'est déjà fait dans la VM !
@@ -210,27 +210,22 @@ Il faut bien retenir ce chemin car on en aura besoin pour la suite.
 être exploitées
 
 > tout au long de l\'exécution du shell.
->
+
 > ***--- Pourquoi le chemin fini par un tiret \"-\" ?***
 >
 > Cela s\'explique par le fait que la ligne dans le makefile est suivie
 > d\'une commande gcc,
->
+
 > éliminant ainsi la nécessité de le spécifier explicitement.
 
-+-----------------------------------+-----------------------------------+
-| **2.4.3.**                        | > **Hello World**\                |
-|                                   | > La compilation se déroule sans  |
-| **2.4.4.**                        | > problème. En chargeant le       |
-|                                   | > module et en utilisant la       |
-|                                   | >                                 |
-|                                   | > commande dmesg, on peut         |
-|                                   | > observer l\'affichage du        |
-|                                   | > message \"Hello, World\".       |
-|                                   | >                                 |
-|                                   | > **Chenillard (Yes !)**          |
-+===================================+===================================+
-+-----------------------------------+-----------------------------------+
+
+ **2.4.3.** **Hello World**          
+
+> La compilation se déroule sans problème. En chargeant le module et en utilisant la commande dmesg, on peut observer l\'affichage du message \"Hello, World\". 
+
+ **2.4.4.** **Chenillard (Yes !)**                             
+                              
+
 
 > Au sein de cette section, nous avons utilisé un timer pour ajuster la
 > fréquence d\'affichage en fonction d\'un paramètre d\'entrée. Les
@@ -239,27 +234,27 @@ Il faut bien retenir ce chemin car on en aura besoin pour la suite.
 > effectué des tests en configurant une vitesse très rapide, où chaque
 > appel à dmesg révèle des changements fréquents, puis une vitesse très
 > lente, où chaque appel à dmesg expose un changement à chaque fois.
->
+
 > Ce clignotement prend en compte le motif défini dans un processus
 > (proc). Dans notre cas, ce motif agit en altérant la direction de
 > l\'affichage. Plutôt que de suivre
->
+
 > une séquence ascendante telle que \"led1 led2 led3\", l\'affichage
 > adopte une
->
+
 > séquence décroissante, présentant \"led3 led2 led1\".
->
+
 > **3.Device tree (TP3)**
 >
 > ![](media/image14.png)
->
+
 > **3.1.** **module accedant au LED via /dev**
 >
 > ***Quel sont les rôles des principales fonctions (probe, read, write,
 > remove), et***
 >
 > ***quand entrent-elles en action ?***
->
+
 > La fonction **probe** est invoquée lorsque le noyau détecte le
 > périphérique des LEDs. Elle est appelée une seule fois et a pour rôle
 > de réserver la mémoire, créer la structure pour stocker les
