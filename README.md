@@ -126,10 +126,10 @@ fonctionne de manière optimale.
 > Dans ce code, nous accédons aux fichiers fpga_led1/brightness,
 > fpga_led2/brightness, etc., puis nous modifions les valeurs des LEDs
 > en effectuant une écriture.
->
-> **2. Modules kernel (TP2)**\
->
-> **2.1.** **Reprise du TP1**\
+
+ **2. Modules kernel (TP2)**
+
+ **2.1.** **Reprise du TP1**
 
 Nous avons établi une connexion réussie et une communication avec la
 carte VEEK. Toutefois, nous avons dû ajuster l\'adresse IP lors de la
@@ -141,7 +141,7 @@ utilisateur.
 
 > ![](media/image7.png)
 
-> **Limitations de mmap():**
+> **Limitations de mmap():**
 >
 > Les mappages de mémoire sont toujours ajustés à des multiples entiers
 > de pages, entraînant un gaspillage d\'espace libre. Avec des pages de
@@ -155,7 +155,7 @@ utilisateur.
 > généralement évitée en éliminant la double copie, surtout pour les
 > fichiers volumineux et fréquemment utilisés.
 >
-> **2.3.** **Compilation de module noyau sur la VM**
+**2.3.** **Compilation de module noyau sur la VM**
 >
 > Pour compiler des modules noyau dans la VM, nous avons besoin des
 > paquets suivant :
@@ -165,7 +165,7 @@ utilisateur.
 En utilisant le Makefile et le fichier source hello.c disponibles sur
 Moodle, nous avons réussi à compiler notre premier module.
 
-Les commandes suivantes ont été utilisées :\
+Les commandes suivantes ont été utilisées :\
 - Pour charger le module : \`sudo insmod \<nom_du_module.ko\>\`\
 - Pour décharger le module : \`sudo rmmod \<nom_du_module.ko\>\`\
 - Pour obtenir des informations sur le module : \`sudo modinfo
@@ -190,9 +190,9 @@ Pour ajouter un timer:
 
 > ![](media/image11.png)
 
-> **2.4.** **Récupération du Noyau Terasic**
+ **2.4.** **Récupération du Noyau Terasic**
 >
-> c'est déjà fait dans la VM !
+> c'est déjà fait dans la VM !
 
 **2.4.1.** **Préparation de la compilation**
 
@@ -206,24 +206,24 @@ Il faut bien retenir ce chemin car on en aura besoin pour la suite.
 
 > ***--- Quel est le rôle des lignes commençant par export ?***
 
-Elles sont destinées à établir des variables d\'environnement pouvant
+Elles sont destinées à établir des variables d\'environnement pouvant
 être exploitées
 
 > tout au long de l\'exécution du shell.
 
 > ***--- Pourquoi le chemin fini par un tiret \"-\" ?***
 >
-> Cela s\'explique par le fait que la ligne dans le makefile est suivie
+> Cela s\'explique par le fait que la ligne dans le makefile est suivie
 > d\'une commande gcc,
 
 > éliminant ainsi la nécessité de le spécifier explicitement.
 
 
- **2.4.3.** **Hello World**          
+**2.4.3.** **Hello World**          
 
 > La compilation se déroule sans problème. En chargeant le module et en utilisant la commande dmesg, on peut observer l\'affichage du message \"Hello, World\". 
 
- **2.4.4.** **Chenillard (Yes !)**                             
+**2.4.4.** **Chenillard (Yes !)**                             
                               
 
 
@@ -244,11 +244,11 @@ Il faut bien retenir ce chemin car on en aura besoin pour la suite.
 
 > séquence décroissante, présentant \"led3 led2 led1\".
 
-> **3.Device tree (TP3)**
+**3.Device tree (TP3)**
 >
 > ![](media/image14.png)
 
-> **3.1.** **module accedant au LED via /dev**
+**3.1.** **module accedant au LED via /dev**
 >
 > ***Quel sont les rôles des principales fonctions (probe, read, write,
 > remove), et***
