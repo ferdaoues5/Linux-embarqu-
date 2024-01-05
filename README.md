@@ -1,4 +1,4 @@
-#TP Linux Embarqué
+# TP Linux Embarqué
 
 **1.** **Prise en main :**\
 **1.1.** **Préparation de la carte SD**\
