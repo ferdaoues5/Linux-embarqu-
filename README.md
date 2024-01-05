@@ -4,42 +4,8 @@
 **1.1.** **Préparation de la carte SD**\
 Premièrement, nous avons procédé au téléchargement des ressources
 requises pour cette séance pratique. Ensuite, nous avons utilisé le
-logiciel Win32DiskImager sous Windows pour
-
-<table style="width:100%;">
-<colgroup>
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-<col style="width: 10%" />
-</colgroup>
-<thead>
-<tr class="header">
-<th>flasher</th>
-<th>la</th>
-<th>carte</th>
-<th>SD</th>
-<th>avec</th>
-<th>l'image</th>
-<th>fournie</th>
-<th>par</th>
-<th>Terasic,</th>
-<th><blockquote>
-<p>nommée</p>
-</blockquote></th>
-</tr>
-</thead>
-<tbody>
-</tbody>
-</table>
-
-VEEK_MT2S_LXDE/VEEK_MT2S_LXDE.img.
+logiciel Win32DiskImager sous Windows pour flasher la carte SD avec 
+l'image fournie par Terasic, nommée VEEK_MT2S_LXDE/VEEK_MT2S_LXDE.img.
 
 **1.2.** **Démarrage**\
 Nous avons introduit la carte SD programmée et mis en marche la carte.
