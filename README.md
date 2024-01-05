@@ -61,7 +61,7 @@ démarrage en utilisant la commande reboot. Pendant ce redémarrage, tous
 les processus sont interrompus. Le système propose une option
 d\'annulation du redémarrage, puis il lance le noyau.
 
-> ![](media/image1.png width="6.205555555555556in"height="3.322221128608924in")
+> ![](media/image1.png)
 
 **1.3.2.Configuration réseau**\
 Lors de la connexion de la carte VEEK sur le switch, l\'adresse qui nous
