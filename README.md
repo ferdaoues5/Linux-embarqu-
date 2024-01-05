@@ -76,11 +76,9 @@ ping fonctionne correctement.
 
 .
 
-![](media/image2.png){width="6.8875in"
-height="4.3694444444444445in"}
+![](media/image2.png)
 
-> ![](media/image3.png){width="6.001388888888889in"
-> height="2.5069444444444446in"}
+> ![](media/image3.png)
 
 **1.4.** **Découverte de la cible**\
 **1.4.1.Exploration des dossiers /sys/class et /proc**
@@ -115,18 +113,15 @@ rouge de la carte, il suffit d'écrire un '1' dans le bon fichier.
 
 **echo \"1\" \> /sys/class/leds/fpga_led1/brightness**
 
-![](media/image4.png){width="6.336111111111111in"
-height="3.8652777777777776in"}
+![](media/image4.png)
 
 **1.4.4.** **Chenillard (Et oui, encore !)**\
 Nous avons développé le code pour créer un effet de chenillard, et il
 fonctionne de manière optimale.
 
-![](media/image5.png){width="6.2972222222222225in"
-height="2.8958333333333335in"}
+![](media/image5.png)
 
-![](media/image6.png){width="6.3in"
-height="4.041666666666667in"}
+![](media/image6.png)
 
 > Dans ce code, nous accédons aux fichiers fpga_led1/brightness,
 > fpga_led2/brightness, etc., puis nous modifions les valeurs des LEDs
@@ -144,8 +139,7 @@ connexion à Putty, car celle-ci avait changé.
 Un programme qui accède directement aux registres depuis l'espace
 utilisateur.
 
-> ![](media/image7.png){width="6.3in"
-> height="4.293055555555555in"}
+> ![](media/image7.png)
 >
 > **Limitations de mmap():**
 >
@@ -166,8 +160,7 @@ utilisateur.
 > Pour compiler des modules noyau dans la VM, nous avons besoin des
 > paquets suivant :
 >
-> ![](media/image8.png){width="6.294444444444444in"
-> height="0.6624989063867016in"}
+> ![](media/image8.png)
 
 En utilisant le Makefile et le fichier source hello.c disponibles sur
 Moodle, nous avons réussi à compiler notre premier module.
@@ -187,18 +180,15 @@ fonctionné de manière optimale.
 
 Pour ajouter un paramètre, nous avons ajouté quelques lignes:
 
-> ![](media/image9.png){width="4.963888888888889in"
-> height="1.9291666666666667in"}
+> ![](media/image9.png)
 
 Pour inclure une entrée dans le système de fichiers proc :
 
-> ![](media/image10.png){width="4.858332239720035in"
-> height="4.1888877952755905in"}
+> ![](media/image10.png)
 
 Pour ajouter un timer:
 
-> ![](media/image11.png){width="4.1875in"
-> height="1.7777777777777777in"}
+> ![](media/image11.png)
 >
 > **2.4.** **Récupération du Noyau Terasic**
 >
@@ -206,13 +196,11 @@ Pour ajouter un timer:
 
 **2.4.1.** **Préparation de la compilation**
 
-> ![](media/image12.png){width="4.683333333333334in"
-> height="0.6347222222222222in"}
+> ![](media/image12.png)
 
 Il faut bien retenir ce chemin car on en aura besoin pour la suite.
 
-> ![](media/image13.png){width="5.854166666666667in"
-> height="4.344444444444444in"}
+> ![](media/image13.png)
 
 **2.4.2.** **Récupération de la configuration actuelle du noyau**
 
@@ -263,8 +251,7 @@ Il faut bien retenir ce chemin car on en aura besoin pour la suite.
 >
 > **3.Device tree (TP3)**
 >
-> ![](media/image14.png){width="5.4944444444444445in"
-> height="3.275in"}
+> ![](media/image14.png)
 >
 > **3.1.** **module accedant au LED via /dev**
 >
@@ -286,8 +273,7 @@ Il faut bien retenir ce chemin car on en aura besoin pour la suite.
 > Enfin, la fonction **remove** est dédiée à la suppression du pilote
 > lorsque le périphérique n\'existe plus.
 
-![](media/image15.png){width="6.3in"
-height="1.9861111111111112in"}
+![](media/image15.png)
 
 > On a ajouté des fonctions read et write pour chaque proc.
 >
@@ -299,19 +285,17 @@ height="1.9861111111111112in"}
 > nouveau tester notre programme avec le bout de code ajouté et nous
 > avons pu constater le bon fonctionnement du command cat.
 
-![](media/image16.png){width="6.3in"
-height="3.3430555555555554in"}
+![](media/image16.png)
 
 > le résultat de ce changement est ci-dessous:
 
-![](media/image17.png){width="6.3in"
-height="3.6972222222222224in"}
+![](media/image17.png)
 
 > Par la suite nous avons déclaré une variable globale pour récupérer
 > la structure qui s'occupe des leds et l'utiliser dans le
 > timer_callback: pour changer la valeur des LEDs :
 >
-> ![](media/image18.png){width="6.3in" height="0.3527777777777778in"}
+> ![](media/image18.png)
 
 > les deux lignes ci-dessus permettent de modifier la valeur des LEDS ,
 > ainsi en allant lire les fichiers:\
