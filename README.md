@@ -123,13 +123,13 @@ fonctionne de manière optimale.
 
 ![](media/image6.png)
 
-> Dans ce code, nous accédons aux fichiers fpga_led1/brightness,
+> Dans ce code, nous accédons aux fichiers fpga_led1/brightness,
 > fpga_led2/brightness, etc., puis nous modifions les valeurs des LEDs
 > en effectuant une écriture.
-
-> **2. Modules kernel (TP2)**
-
-> **2.1.** **Reprise du TP1**
+>
+> **2. Modules kernel (TP2)**\
+>
+> **2.1.** **Reprise du TP1**\
 
 Nous avons établi une connexion réussie et une communication avec la
 carte VEEK. Toutefois, nous avons dû ajuster l\'adresse IP lors de la
