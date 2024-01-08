@@ -39,6 +39,6 @@ static void __exit my_exit(void)
 
 module_init(my_init);
 module_exit(my_exit);
-MODULE_AUTHOR("Yannik Li <yannik520@gmail.com>");
+MODULE_AUTHOR("Quelqu'un'");
 MODULE_DESCRIPTION("Timer example");
 MODULE_LICENSE("GPL");
